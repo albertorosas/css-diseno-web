@@ -1,0 +1,208 @@
+@keyframes entrada {
+    0% {top: 150%;}
+    60% {top: -5%;}
+    100% {top: 0%;}
+}
+
+* {animation-name: entrada !important;
+animation-duration: 3s; }
+
+@media (min-width:900px) {
+  body {
+  background-color: black;
+  font-family: "Dancing Script";
+  color: black;
+  }
+  header {
+  width: 900px;
+  background-color: #5b7989;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  }
+  .titulo {
+  font-size: 2.5em;
+  text-shadow: 2px 0 0 black;
+  padding: 10px;
+  }
+  header nav {
+  padding: 20px;
+  }
+  nav a {
+  padding: 20px;
+  color: white;
+  }
+  nav a:active{
+  text-decoration: none;
+  }
+  img {
+  box-shadow: 2px 2px black;
+  max-width: 100%;
+  }
+  .principal{
+  width: 900px;
+  background-color: #82c3a6;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  }
+  .principal img{
+  width: 80%;
+  margin: auto;
+  max-height: 90%;
+  }
+  .paisa img:hover { transform: rotate(10deg);}
+  .retra img:hover { transform: translate(5px,20px);}
+
+  .paisa img, .retra img {
+  width: 80%;
+  vertical-align: middle;
+  position: relative;
+  transition: transform .6s;
+  }
+  .contenido{
+  background-color: #d5c75f;
+  width: 900px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  }
+  .paisa, .retra{
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  }
+
+  #i1 { filter: blur(10px);}
+  #i2, #i4, #i6 {filter: grayscale(100%);}
+  #i3 {filter: sepia(90%);}
+
+  #contenido div {
+    width: 33%;
+    text-align: center;
+  }
+  .contenido div img {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer{
+  border-radius: 0 0 10px 10px;
+  width: 900px;
+  margin: auto;
+  background-color: #C6d5c5;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;;
+  }
+
+  h1 > a {text-align: center;}
+
+ #social {height: 20px; width: 20px; box-shadow: none;}
+ }
+
+@media (max-width:900px) {
+
+ body {
+   background-color: black;
+   font-family: "Dancing Script";
+   color: black;
+ }
+ header {
+   width: 100%;
+   background-color: #5b7989;
+   margin: auto;
+   border-radius: 10px 10px 0 0;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   color: white;
+ }
+ .titulo {
+   font-size: 2.5em;
+   text-shadow: 2px 0 0 black;
+   padding: 10px;
+   text-align: center;
+ }
+ header nav {
+   padding: 20px;
+ }
+ nav a {
+   padding: 20px;
+   color: white;
+ }
+ nav a:active{
+   text-decoration: none;
+ }
+ img {
+   box-shadow: 2px 2px black;
+   max-width: 100%;
+ }
+ .principal{
+   width: 100%;
+   background-color: #82c3a6;
+   height: 300px;
+   margin: auto;
+   display: flex;
+ }
+ .principal img{
+   width: 80%;
+   margin: auto;
+   max-height: 90%;
+ }
+
+ .paisa img:hover { transform: rotate(10deg);}
+ .retra img:hover { transform: translate(5px,20px);}
+
+ .paisa img, .retra img {
+   width: 80%;
+   vertical-align: middle;
+   position: relative;
+   transition: transform .6s;
+ }
+ .contenido{
+   background-color: #d5c75f;
+   width: 100%;
+   margin: auto;
+   display: flex;
+   flex-flow: row wrap;
+ }
+ .contenido div {
+   text-align: center;
+ }
+
+ .contenido div img {
+   width: 80%; margin: 10px;
+  }
+
+ .paisa, .retra{
+   width: 100%;
+   text-align: center;
+   vertical-align: middle;
+   font-size: 16px;
+ }
+
+ #i1 { filter: blur(10px);}
+ #i2, #i4, #i6 {filter: grayscale(100%);}
+ #i3 {filter: sepia(90%);}
+
+ .footer{
+   border-radius: 0 0 10px 10px;
+   width: 100%;
+   margin: auto;
+   background-color: #C6d5c5;
+   display: flex;
+   flex-flow: row wrap;;
+   justify-content: center;
+ }
+
+ h1 > a {text-align: center;}
+ .footer div {width: 100%; text-align: center;}
+  #social {height: 20px; width: 20px; box-shadow: none;}
+  }
